@@ -1,0 +1,200 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header positioning */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main content padding */
+main {
+  padding: 100px 20px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Adjust the title positioning to ensure it doesn’t overlap the header */
+.event-title {
+  margin-top: 60px;
+}
+
+header a {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+/* Center the image */
+.event-image {
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 90%; /* Prevents the image from being too wide */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-image img {
+  display: block; /* Ensures the image respects centering rules */
+  margin: 0 auto; /* Centers the image horizontally within the container */
+  width: 100%; /* Ensures it takes up the full width of the parent */
+  max-height: 600px; /* Prevents excessively tall images */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Event Details Container */
+.event-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.event-details strong {
+  font-weight: bold;
+  color: #e67e22;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.event-details .location {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.event-details .date-time {
+  font-size: 18px;
+  color: #2980b9;
+}
+
+.event-details .description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #34495e;
+  text-align: justify;
+}
+
+.event-details p {
+  margin: 0;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.back-to-events {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #e67e22;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-events:hover {
+  background-color: #d35400;
+}
+
+
+.register-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #2980b9;
+}
+
+/* General button styling */
+.attend_event {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Blue button for not registered */
+.attend_event.blue {
+  background-color: #007bff; /* Bootstrap blue */
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.attend_event.blue:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Red button for registered */
+.attend_event.red {
+  background-color: #dc3545; /* Bootstrap red */
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.attend_event.red:hover {
+  background-color: #a71d2a; /* Darker red on hover */
+}
